@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    height:10vh;
+    width:100vw;
+    background-color: black;
+    color:white;
+}
+.button{
+    height:4vh;
+    width:15vw;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    margin-left:45vw;
+}
+
+nav{
+    height:6vh;
+    width:100vw;
+    background-color: pink;
+
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.paragraph{
+    height:20vh;
+    width:40vw;
+    background-color: rgb(214, 212, 212);
+    font-size: 1rem;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    gap:40vw;
+    margin-bottom:1vh;
+}
+
+.price{
+    height:10vh;
+    width:20vw;
+    background-color: rgba(14, 10, 219, 0.719);
+    color:aliceblue;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-left:5vw;
+}
+
+.voucher{
+    background-color: aliceblue;
+    margin:5px;
+    color:orangered;
+}
+.logo{
+    height:20vh;
+    width:20vw;
+    
+}
+
+footer{
+    height:5vh;
+    width:100vw;
+    background-color: red;
+    color:antiquewhite;
+    position:relative;
+    bottom: 0px;
+}

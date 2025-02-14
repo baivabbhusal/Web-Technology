@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baivab Web page</title>
+    <style>
+        button{
+            background-color: green;
+            color:aliceblue;
+            width:75px;
+            height:30px;
+            font-weight: bolder;
+            border:2px solid black;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body bg>
+    <hr color="pink" size="10px">
+    <button type="button" id="submit">Click me</button>
+</body>
+<script>
+    
+    const button=document.getElementById("submit");
+    button.addEventListener("click",sendAlert);
+    function sendAlert(){
+        alert("Hello! Welcome Event");
+    }
+    </script>
+</html>

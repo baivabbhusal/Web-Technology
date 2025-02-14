@@ -1,0 +1,17 @@
+h1{
+    color:red;
+    background-color: black;
+}
+#large{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#password{
+    background-color: aqua;
+}
+.under-line{
+    color:blue;
+}
+#power{
+    color:red;
+}

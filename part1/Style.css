@@ -1,0 +1,15 @@
+table{
+    border:2px solid green;
+
+}
+label{
+    display:block;
+    padding:5px 0;
+}
+
+.videos{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}

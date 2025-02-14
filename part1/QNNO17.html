@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baivab Form</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1 align="center">XYZ college of IT</h1>
+    <p align="center">Student Detail Form</p>
+    <hr color="blue">
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>
+                Name:<input type="text" placeholder="joendra " id="name" required>
+            </label>
+            <label>
+                Address:<input type="text" placeholder="Pokhara" required>
+            </label>
+            <label>
+                Sex:
+                <input type="radio" name="sex">Male
+                <input type="radio" name="sex">Female
+    
+            </label>
+            <label>
+                Select your favorite color:
+                <input type="color">
+            </label>
+            <label>
+                Date of Birth:
+                <input type="date">
+            </label>
+            <label>
+                Upload Citizenship photo:
+                <input type="file">
+            </label>
+            <label>
+                Mobile number:<input type="number" required>
+            </label>
+            <label>
+                Appontment time:<input type="time">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Hobbies:
+                <input type="checkbox">Movies
+                <input type="checkbox">Playing Football
+                <input type="checkbox">Reading Nobel
+                <input type="checkbox">Others
+            </label>
+            <label>
+                Education:
+                <select>
+                    <option>Phd</option>
+                    <option>Masters</option>
+                    <option>Bachelors</option>
+                    <option>+2</option>
+                </select>
+            </label>
+        </fieldset>
+        <hr color="black">
+        <label>
+        Few words:
+        <textarea rows="5" cols="30"></textarea>
+    </label>
+    <button>Send</button>
+    <button>Clear</button>
+
+    </form>
+</body>
+</html>
