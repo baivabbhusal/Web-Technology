@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baivab Web Page</title>
+</head>
+<style>
+    .box1,.box2,.box3{
+        height:100px;
+        color:white;
+        margin-bottom: 10px;
+    }
+    .box1{
+        background-color: red;
+    }
+    .box2{
+        background-color: blue;
+    }
+    .box3{
+        background-color: green; 
+    }
+    button{
+        background-color: black;
+        color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="box1" id="box1">Box 1</div>
+    <div class="box2" id="box2">Box 2</div>
+    <div class="box3" id="box3">Box 3</div>
+    <button>Click me</button>
+</body>
+<script>
+    const box1=document.querySelector("#box1");
+    const box2=document.querySelector("#box2");
+    const box3=document.querySelector("#box3");
+    const button=document.querySelector("button");
+    button.addEventListener("click",()=>{
+        box1.style.border="5px solid green";
+        box2.style.border="5px solid yellow";
+        box3.style.border="5px solid blue";
+        box1.style.borderRadius="10px";
+        box2.style.borderRadius="10px";
+        box3.style.borderRadius="10px";
+        box1.style.backgroundColor="pink";
+        box2.style.backgroundColor="black";
+        box3.style.backgroundColor="orange";
+    })
+
+
+    </script>
+</html>

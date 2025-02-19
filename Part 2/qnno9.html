@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors Example</title>
+    <style>
+        /* Basic reset */
+        body, h1, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Descendant Selector (space) */
+        /* Styles all <p> elements inside <main> */
+        main p {
+            color: #007BFF;
+        }
+
+        /* Child Selector (>) */
+        /* Styles only direct <li> children of <ul> */
+        ul > li {
+            background-color: #f8d7da;
+            padding: 5px;
+            margin: 2px 0;
+        }
+
+        /* Adjacent Sibling Selector (+) */
+        /* Styles the <p> immediately after <h2> */
+        h2 + p {
+            font-style: italic;
+            color: #28a745;
+        }
+
+        /* General Sibling Selector (~) */
+        /* Styles all <p> elements that are siblings of <h3> */
+        h3 ~ p {
+            background-color: #fff3cd;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Combinator Selectors Example</h1>
+    </header>
+
+    <main>
+        <h2>Descendant Selector Example</h2>
+        <p>This paragraph is styled using the descendant selector (inside &lt;main&gt;).</p>
+
+        <h2>Child Selector Example</h2>
+        <ul>
+            <li>List Item 1 (direct child of &lt;ul&gt;)</li>
+            <li>List Item 2 (direct child of &lt;ul&gt;)</li>
+            <div>
+                <li>List Item 3 (not a direct child of &lt;ul&gt;)</li>
+            </div>
+        </ul>
+
+        <h2>Adjacent Sibling Selector Example</h2>
+        <p>This paragraph is styled because it is immediately after an &lt;h2&gt;.</p>
+        <p>This paragraph is not styled because it is not immediately after an &lt;h2&gt;.</p>
+
+        <h3>General Sibling Selector Example</h3>
+        <p>This paragraph is styled because it is a sibling of &lt;h3&gt;.</p>
+        <p>This paragraph is also styled because it is a sibling of &lt;h3&gt;.</p>
+    </main>
+</body>
+</html>
