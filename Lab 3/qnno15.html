@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sentence" placeholder="Enter a sentence">
+    <input type="text" id="replace-word" placeholder="Enter a word to replace">
+    <input type="text" id="replacement" placeholder="Enter replacement word">
+    <button id="replace">Replace</button>
+</body>
+<script>
+    const buttonReplace=document.querySelector("#replace");
+    const sentence=document.querySelector("#sentence");
+    const replaceWord=document.querySelector("#replace-word");
+    const replacement=document.querySelector("#replacement");
+    buttonReplace.addEventListener("click",()=>{
+        let sentenceValue=sentence.value;
+        let replaceWordValue=replaceWord.value;
+        let replacementValue=replacement.value;
+        let newSentence=sentenceValue.replace(replaceWordValue,replacementValue);
+        console.log(newSentence);
+    });
+</script>
+</html>
