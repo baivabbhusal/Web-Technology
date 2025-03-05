@@ -3,3 +3,4 @@ console.log(sentence.length);
 console.log(sentence.toUpperCase());
 console.log(sentence.toLowerCase());
 console.log(sentence.slice(5,10));
+console.log(sentence.replace("development","Technology"));
