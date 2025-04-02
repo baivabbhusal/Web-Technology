@@ -19,7 +19,7 @@ const firstName=document.querySelector("#first-name");
 const lastName=document.querySelector("#last-name");
 const buttonConcate=document.querySelector("#concat");
 buttonConcate.addEventListener("click",()=>{
-console.log(firstName.value.concate(lastName.value));
+console.log(firstName.value+lastName.value);
 });
 //slice
 const startIndex=document.querySelector("#start-index");
